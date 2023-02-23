@@ -1,4 +1,6 @@
-import './globals.css'
+import Navigation from './shared/Navbar'
+import WordGenerator from './shared/WordGenerator'
+import '/styles/globals.css'
 
 export default function RootLayout({
   children,
@@ -12,7 +14,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      {/* Malick */}
+      <body className='container'>{children}</body>
+      <Navigation />
+      <WordGenerator />
     </html>
   )
 }
